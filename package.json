@@ -1,0 +1,23 @@
+{
+  "name": "visapro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader native",
+    "build": "vite build --configLoader native && vite build --configLoader native --ssr src/entry-server.jsx --outDir .ssr && node prerender.mjs",
+    "preview": "vite preview --configLoader native"
+  },
+  "dependencies": {
+    "react": "^19",
+    "react-dom": "^19",
+    "react-router-dom": "^7",
+    "framer-motion": "^12",
+    "lucide-react": "^0.468"
+  },
+  "devDependencies": {
+    "vite": "^6",
+    "@vitejs/plugin-react": "^4",
+    "tailwindcss": "^4",
+    "@tailwindcss/vite": "^4"
+  }
+}

@@ -1,0 +1,13 @@
+/work-visas/ /services 301
+/work-visas/h1b-visa/ /services/h-1b-visa 301
+/work-visas/l1-visa/ /services/l-1-visa 301
+/work-visas/o1-visa/ /services/o-1-visa 301
+/work-visas/e2-visa/ /services/e-2-investor-visa 301
+/green-cards/ /services/green-cards 301
+/green-cards/employment/eb1-green-card/ /services/eb-1-green-card 301
+/green-cards/employment/eb2-national-interest-waiver/ /services/eb-2-niw 301
+/family-visas/ /services/family-immigration 301
+/family-visas/k1-fiance-visa/ /services/k-1-fiance-visa 301
+/visitor-visas/ /services/b1-b2-visitor-visa 301
+/visitor-visas/b1-visa/ /services/b1-b2-visitor-visa 301
+/visitor-visas/b2-visa/ /services/b1-b2-visitor-visa 301
