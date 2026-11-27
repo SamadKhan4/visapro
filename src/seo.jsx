@@ -9,7 +9,7 @@ export function metadata(path){
  const title=path==='/'?'VisaPro | U.S. Immigration Services':name+' | VisaPro'
  const url=base+(path==='/'?'/':path)
  const known=routes.includes(path)
- const organization={'@type':['Organization','LegalService'],'@id':base+'/#organization',name:'VisaPro',url:base+'/',telephone:'+1-202-787-1944',address:{'@type':'PostalAddress',streetAddress:'1120 Connecticut Avenue NW, Suite 425',addressLocality:'Washington',addressRegion:'DC',postalCode:'20036',addressCountry:'US'}}
+ const organization={'@type':['Organization','LegalService'],'@id':base+'/#organization',name:'VisaPro',url:base+'/',logo:base+'/logo.jpeg',telephone:'+1-202-787-1944',address:{'@type':'PostalAddress',streetAddress:'1120 Connecticut Avenue NW, Suite 425',addressLocality:'Washington',addressRegion:'DC',postalCode:'20036',addressCountry:'US'}}
  const graph=[organization]
  if(known&&path!=='/'){
   const ancestors=service?[['Immigration Services','/services']]:article?[['Immigration Insights','/resources']]:path==='/experts/ravneet-brar'?[['Our Immigration Experts','/experts']]:[]

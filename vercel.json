@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/work-visas", "destination": "/services", "statusCode": 301 },
+    { "source": "/work-visas/h1b-visa", "destination": "/services/h-1b-visa", "statusCode": 301 },
+    { "source": "/work-visas/l1-visa", "destination": "/services/l-1-visa", "statusCode": 301 },
+    { "source": "/work-visas/o1-visa", "destination": "/services/o-1-visa", "statusCode": 301 },
+    { "source": "/work-visas/e2-visa", "destination": "/services/e-2-investor-visa", "statusCode": 301 },
+    { "source": "/green-cards", "destination": "/services/green-cards", "statusCode": 301 },
+    { "source": "/green-cards/employment/eb1-green-card", "destination": "/services/eb-1-green-card", "statusCode": 301 },
+    { "source": "/green-cards/employment/eb2-national-interest-waiver", "destination": "/services/eb-2-niw", "statusCode": 301 },
+    { "source": "/family-visas", "destination": "/services/family-immigration", "statusCode": 301 },
+    { "source": "/family-visas/k1-fiance-visa", "destination": "/services/k-1-fiance-visa", "statusCode": 301 },
+    { "source": "/visitor-visas", "destination": "/services/b1-b2-visitor-visa", "statusCode": 301 },
+    { "source": "/visitor-visas/b1-visa", "destination": "/services/b1-b2-visitor-visa", "statusCode": 301 },
+    { "source": "/visitor-visas/b2-visa", "destination": "/services/b1-b2-visitor-visa", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/:page+", "destination": "/:page/index.html" }
+  ]
+}

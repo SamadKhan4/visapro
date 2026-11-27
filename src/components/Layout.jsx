@@ -10,7 +10,11 @@ export const contact = 'https://www.visapro.com/contact-us/'
 export const phone = '+1 202-787-1944'
 export const phoneLink = 'tel:+12027871944'
 export const portal = 'https://www.visapro.com/login/'
-export function Brand(){return <Link to="/" className="brand" aria-label="VisaPro home"><span className="brand-mark"><Globe2 size={23}/></span><span>Visa<span>Pro</span><small>U.S. IMMIGRATION SERVICES</small></span></Link>}
+export function Brand(){
+ return <Link to="/" className="brand" aria-label="VisaPro Immigration Attorneys home">
+  <img src="/logo.jpeg" alt="VisaPro Immigration Attorneys" width={159} height={58}/>
+ </Link>
+}
 export function Button({to='/consultation',children='Book a Consultation',type='gold',onClick}){return <Link className={'button '+type} to={to} onClick={()=>{track('cta_click',{destination:to});onClick?.()}}>{children}</Link>}
 export function Header(){
  const [mobile,setMobile]=useState(false), [mega,setMega]=useState(false)
